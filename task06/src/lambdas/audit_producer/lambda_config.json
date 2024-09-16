@@ -10,24 +10,24 @@
   "lambda_path": "lambdas\\audit_producer",
   "dependencies": [
     {
-      "resource_name": "${trigger_table_name}",
+      "resource_name": "${trigger_table}",
       "resource_type": "dynamodb_table"
     },
     {
-      "resource_name": "${target_table_name}",
+      "resource_name": "${target_table}",
       "resource_type": "dynamodb_table"
     }
   ],
   "event_sources": [
     {
-      "target_table": "${trigger_table_name}",
+      "target_table": "${trigger_table}",
       "resource_type": "dynamodb_trigger",
       "batch_size": 1
     }
   ],
   "env_variables": {
-    "target_table_name": "${target_table_name}",
-    "trigger_table_name": "${trigger_table_name}"
+    "target_table_name": "${target_table}",
+    "trigger_table_name": "${trigger_table}"
   },
   "publish_version": true,
   "alias": "${lambdas_alias_name}",
