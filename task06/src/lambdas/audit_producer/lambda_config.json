@@ -20,7 +20,7 @@
   ],
   "event_sources": [
     {
-      "target_table": "Configuration",
+      "target_table": "Audit",
       "resource_type": "dynamodb_trigger",
       "batch_size": 1
     }
