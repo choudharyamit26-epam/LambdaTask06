@@ -22,6 +22,8 @@ class AuditProducer(AbstractLambda):
         audit_table = dynamodb.Table(os.environ.get("target_table_name"))
 
         _LOG("===============>>>>>", event)
+        _LOG("<<<===============>>>>>", config_table)
+        _LOG("<<<===============>>>>>", audit_table)
         return 200
 
 
