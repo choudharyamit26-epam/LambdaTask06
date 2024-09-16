@@ -35,7 +35,8 @@
     "read_capacity": 1,
     "write_capacity": 1,
     "global_indexes": [],
-    "autoscaling": []
+    "autoscaling": [],
+    "stream_view_type": "NEW_IMAGE"
   },
   "${target_table}": {
     "resource_type": "dynamodb_table",
