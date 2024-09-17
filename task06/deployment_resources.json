@@ -28,15 +28,14 @@
     },
     "resource_type": "iam_policy"
   },
-  "${trigger_table}": {
+  "Configuration": {
     "resource_type": "dynamodb_table",
     "hash_key_name": "Id",
     "hash_key_type": "S",
     "read_capacity": 1,
     "write_capacity": 1,
     "global_indexes": [],
-    "autoscaling": [],
-    "stream_view_type": "NEW_IMAGE"
+    "autoscaling": []
   },
   "${target_table}": {
     "resource_type": "dynamodb_table",

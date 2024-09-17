@@ -27,8 +27,7 @@
     }
   ],
   "env_variables": {
-    "target_table_name": "${target_table}",
-    "trigger_table_name": "${trigger_table}"
+    "target_table_name": "${target_table}"
   },
   "publish_version": true,
   "alias": "${lambdas_alias_name}",
