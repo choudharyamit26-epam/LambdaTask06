@@ -37,7 +37,7 @@
     "global_indexes": [],
     "autoscaling": []
   },
-  "${target_table}": {
+  "Audit": {
     "resource_type": "dynamodb_table",
     "hash_key_name": "Id",
     "hash_key_type": "S",

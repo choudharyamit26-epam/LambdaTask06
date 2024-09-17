@@ -11,11 +11,6 @@
   "dependencies": [
     {
       "resource_name": "Configuration",
-      "resource_type": "dynamodb_table",
-      "stream_view_type": "NEW_AND_OLD_IMAGES"
-    },
-    {
-      "resource_name": "Audit",
       "resource_type": "dynamodb_table"
     }
   ],
